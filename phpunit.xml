@@ -35,11 +35,54 @@
         <log type="testdox-txt" target="build/phpdox/testdox.txt"/>
     </logging>
     <testsuites>
-        <testsuite name="MotTest">
+        <testsuite name="MotMain">
             <directory>./module/Application/tests</directory>            
+            <directory>./module/MotMambu/tests</directory>
         </testsuite>
-    </testsuites>
-    
+        <testsuite name="MotAdmin">
+            <!--<directory>./module/MotBranches/tests</directory>-->
+            <!--<directory>./module/MotUsers/tests</directory>-->
+            <!--<directory>./module/MotClients/tests</directory>-->            
+            <!--<directory>./module/MotAdmin/tests</directory>-->
+            <!--<directory>./module/MotDispute/tests</directory>-->
+        </testsuite>
+        <testsuite name="MotReports">
+            <!--<directory>./module/MotReports/tests</directory>-->
+            <!--<directory>./module/MotUserReports/tests</directory>-->                      
+            <!--<directory>./module/MotBranchReports/tests</directory>-->
+            <!--<directory>./module/MotDisputeReports/tests</directory>-->
+            <!--<directory>./module/MotAdminReportsPermission/tests</directory>-->
+            <!--<directory>./module/MotClientReports/tests</directory>-->
+            <!--<directory>./module/MotCollateralReports/tests</directory>-->
+            <!--<directory>./module/MotFinancialReports/tests</directory>-->
+            <!--<directory>./module/MotLegalReports/tests</directory>-->            
+        </testsuite>
+        <testsuite name="MotCollateral">
+            <!--<directory>./module/MotCollateral/tests</directory>-->
+            <!--<directory>./module/MotCollateralDispute/tests</directory>-->
+            <!--<directory>./module/MotBranchWithCollateral/tests</directory>-->
+            <!--<directory>./module/MotUserCollectingCollateral/tests</directory>-->                        
+            <!--<directory>./module/MotAdminCollateralPermission/tests</directory>-->
+            <!--<directory>./module/MotClientHavingCollateral/tests</directory>-->            
+            <!--<directory>./module/MotCollateralReports/tests</directory>-->
+        </testsuite>
+        <testsuite name="MotFinance">
+            <!--<directory>./module/MotFinance/tests</directory>-->
+            <!--<directory>./module/MotUserWithFinance/tests</directory>-->                      
+            <!--<directory>./module/MotBranchFinances/tests</directory>-->            
+            <!--<directory>./module/MotAdminFinancePermission/tests</directory>-->
+            <!--<directory>./module/MotClientFinanceStatus/tests</directory>-->
+            <!--<directory>./module/MotFinancialReports/tests</directory>-->            
+        </testsuite>
+        <testsuite name="MotLegal">
+            <!--<directory>./module/MotLegal/tests</directory>-->  
+            <!--<directory>./module/MotUsersWithLegalAction/tests</directory>-->
+            <!--<directory>./module/MotBranchLegalDepartment/tests</directory>-->            
+            <!--<directory>./module/MotAdminLegalPermission/tests</directory>-->
+            <!--<directory>./module/MotClientLegalIssues/tests</directory>-->            
+            <!--<directory>./module/MotLegalReports/tests</directory>-->       
+        </testsuite>        
+    </testsuites>    
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
             <directory suffix=".php">./module/**/src/</directory>
