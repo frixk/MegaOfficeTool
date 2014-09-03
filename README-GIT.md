@@ -13,21 +13,21 @@ review.
 ### Option 1: GitHub
 
  1. Setup a GitHub account (http://github.com/), if you haven't yet
- 2. Fork the ZF2 repository (http://github.com/zendframework/zf2)
+ 2. Fork the MegaOfficeTool repository (http://github.com/CodingMatters/MegaOfficeTool)
  3. Clone your fork locally and enter it (use your own GitHub username
     in the statement below)
 
     ```sh
-    % git clone git@github.com:<username>/zf2.git
-    % cd zf2
+    % git clone git@github.com:<username>/MegaOfficeTool.git
+    % cd MegaOfficeTool
     ```
 
- 4. Add a remote to the canonical ZF repository, so you can keep your fork
+ 4. Add a remote to the canonical MOT repository, so you can keep your fork
     up-to-date:
 
     ```sh
-    % git remote add zf2 https://github.com/zendframework/zf2.git
-    % git fetch zf2
+    % git remote add MegaOfficeTool https://github.com/CodingMatters/MegaOfficeTool.git
+    % git fetch MegaOfficeTool
     ```
 
 ### Option 2: Personal Repository
@@ -50,20 +50,20 @@ repository.
     % git remote add origin git://yourdomain/yourrepo.git
     ```
 
- 3. Add a remote for the ZF repository and fetch it
+ 3. Add a remote for the MOT repository and fetch it
 
     ```sh
-    % git remote add zf2 https://github.com/zendframework/zf2.git
-    % git fetch zf2
+    % git remote add MegaOfficeTool https://github.com/CodingMatters/MegaOfficeTool.git
+    % git fetch MegaOfficeTool
     ```
 
- 4. Create a new branch for the ZF repository (named "zf/master" here)
+ 4. Create a new branch for the MOT repository (named "MegaOfficeTool/master" here)
 
     ```sh
-    % git checkout -b zf/master zf2/master
+    % git checkout -b MegaOfficeTool/master MegaOfficeTool/master
     ```
 
- 5. Create your master branch off the ZF branch, and push to your
+ 5. Create your master branch off the MegaOfficeTool branch, and push to your
     repository
 
     ```sh

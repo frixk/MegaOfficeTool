@@ -15,9 +15,8 @@ If you wish to contribute to MOT modules, please be sure to
 read/subscribe to the following resources:
 
  -  [Coding Standards](https://github.com/zendframework/zf2/wiki/Coding-Standards)
- -  [ZF Git Guide](https://github.com/zendframework/zf2/blob/master/README-GIT.md)
+ -  [Git Guide](https://github.com/CodingMatters/MegaOfficeTool/blob/master/README-GIT.md)
  -  [MOT developer mailing list](http://bit.ly/apigility-dev)
- -  Apigility developer IRC channel: #apigility-dev on Freenode.net
 
 If you are working on new features, refactoring an existing module, or proposing
 a new module, please send an email to the developer mailing list.
