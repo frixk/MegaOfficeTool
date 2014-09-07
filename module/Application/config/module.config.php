@@ -53,5 +53,8 @@ return [
         'template_path_stack'       => [
             'application'   => __DIR__ . '/../view'
         ],
+    ],
+    'module_layouts' => [
+        'Application' => 'layout/layout'
     ]
 ];

@@ -27,7 +27,13 @@
 return [
     // This should be an array of module namespaces used in the application.
     'modules' => [
+        'EdpModuleLayouts',
+        'DoctrineModule',        
+        'ZfcBase',
+        'ZfcUser',
+        'ZfcRbac',
         'Application',
+        'MotUsers',        
     ],
 
     // These are various options for the listeners attached to the ModuleManager
