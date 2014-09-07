@@ -18,7 +18,9 @@
     ],
     "require": {
         "php": ">=5.4",
-        "zendframework/zendframework": "2.3.*"
+        "zendframework/zendframework": "2.3.*",
+	"codingmatters/mot-user": "dev-master",
+        "evandotpro/edp-module-layouts": "dev-master"
     },
     "require-dev": {        
         "phpunit/phpunit": "4.*",
