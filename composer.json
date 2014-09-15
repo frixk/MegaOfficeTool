@@ -18,12 +18,23 @@
     ],
     "require": {
         "php": ">=5.4",
+        "git": ">=1.8",
         "zendframework/zendframework": "2.3.*",
-	"codingmatters/mot-users": "0.*",
-        "evandotpro/edp-module-layouts": "dev-master"
+        "evandotpro/edp-module-layouts": "dev-master",
+        "zf-commons/zfc-user": "~1.2",
+        "zf-commons/zfc-rbac": "~2.4",
+        "doctrine/doctrine-module": "~0.8"
     },
     "require-dev": {        
         "phpunit/phpunit": "4.*",
         "phpunit/php-invoker": "1.*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "git submodule update --init"
+        ],
+        "post-update-cmd": [
+            "git submodule sync"
+        ]
     }
 }
