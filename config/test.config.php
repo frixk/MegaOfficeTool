@@ -26,7 +26,8 @@
 
 return [
     'modules' => [
-        'Application'
+        'Application',
+        'MotUsers'
     ],
     
     'module_listener_options' => [
