@@ -16,18 +16,25 @@
             "homepage": "http://www.gabbydgab.com/"            
         }
     ],
-    "extra": {
-        "branch-alias": {
-            "dev-develop": "0.3-dev",
-            "dev-master": "0.2-dev"            
-        }
-    },
     "require": {
         "php": ">=5.4",
-        "zendframework/zendframework": "2.3.*"
+        "git": ">=1.8",
+        "zendframework/zendframework": "2.3.*",
+        "evandotpro/edp-module-layouts": "dev-master",
+        "zf-commons/zfc-user": "~1.2",
+        "zf-commons/zfc-rbac": "~2.4",
+        "doctrine/doctrine-module": "~0.8"
     },
     "require-dev": {        
         "phpunit/phpunit": "4.*",
         "phpunit/php-invoker": "1.*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "git submodule update --init"
+        ],
+        "post-update-cmd": [
+            "git submodule sync"
+        ]
     }
 }
