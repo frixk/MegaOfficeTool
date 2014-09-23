@@ -24,14 +24,39 @@
  * THE SOFTWARE.
  */
 
+/**
+ * Local Database Configuration Override
+ *
+ * This configuration override file is for overriding environment-specific and
+ * security-sensitive configuration information. Copy this file without the
+ * .dist extension at the end and populate values as needed.
+ *
+ * @NOTE: This file is ignored from Git by default with the .gitignore included
+ * in ZendSkeletonApplication. This is a good practice, as it prevents sensitive
+ * credentials from accidentally being committed into version control.
+ */
+
 return [
+    'db' => [
+        'adapters' => [
+            'motdb' => [
+                'driver'    => 'Pdo',
+                'dsn'       => 'mysql:dbname=motdb;host=localhost',
+                'username'  => 'motuser',
+                'password'  => 'motpassword'
+            ],
+            'mambudb' => [
+                'driver'    => 'Pdo',
+                'dsn'       => 'mysql:dbname=mambudb;host=localhost',
+                'username'  => 'motuser',
+                'password'  => 'motpassword'
+            ]
+        ]
+    ],
+    
     'service_manager' => [
         'abstract_factories' => [
-            'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
-            'Zend\Log\LoggerAbstractServiceFactory',
-        ],
-        'aliases' => [
-            'translator' => 'MvcTranslator',
-        ],
+            'Zend\Db\Adapter\AdapterAbstractServiceFactory'
+        ]
     ]
 ];

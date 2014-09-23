@@ -37,5 +37,11 @@
  */
 
 return [
-    
+    'service_manager' => [        
+        'factories' => [
+            'Zend\Authentication\AuthenticationService' => function($service) {
+                return $service->get('zfcuser_auth_service');
+            }
+        ]
+    ]
 ];

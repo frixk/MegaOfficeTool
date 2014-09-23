@@ -32,7 +32,7 @@ return [
         'ZfcBase',
         'ZfcUser',
         'ZfcRbac',
-        'Application',
+        'Mot',
         'MotUsers',
     ],
 

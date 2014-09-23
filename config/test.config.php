@@ -26,7 +26,7 @@
 
 return [
     'modules' => [
-        'Application',
+        'Mot',
         'MotUsers'
     ],
     

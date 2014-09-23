@@ -22,6 +22,8 @@ Alternately, clone the repository and manually invoke `composer` using the shipp
     cd my/project/dir
     git clone git://github.com/CodingMatters/MegaOfficeTool.git
     cd MegaOfficeTool
+    git submodule init
+    git submodue update
     php composer.phar self-update
     php composer.phar install
 
